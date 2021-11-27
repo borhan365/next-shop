@@ -1,16 +1,15 @@
-import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import SidebarMenu from '../Data/SidebarMenu'
+import React from 'react'
+import SidebarMenu from '../../Data/SidebarMenu'
 import HeroSlider from './HeroSlider'
 
 function HeroSection() {
   return (
     <>
-      <div className="flex justify-between gap-5 my-2">
+      <div className="flex justify-between gap-5 my-2 w-full overflow-hidden">
 
           {/* sidebar menu */}
-          <div className="w-80 bg-gray-100 border p-3 overflow-hidden">
+          <div className="w-1/5 bg-gray-100 border p-3">
             <ul>
               {
                 SidebarMenu.map((item, index) => (
@@ -25,7 +24,7 @@ function HeroSection() {
           </div>
 
           {/* hero slider */}
-          <div>
+          <div className="w-4/5">
             <HeroSlider />
           </div>
       </div>
