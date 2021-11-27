@@ -5,7 +5,8 @@ import TopHeader from '../Header/TopHeader'
 import CategorySection from './CategorySection/CategorySection'
 import HeroSection from './HeroSection/HeroSection'
 import JustArrivedSection from './JustArrivedSection/JustArrivedSection'
-import TwoColBanner from './TwoColBanner.js/TwoColBanner'
+import LatestProduct from './LatestProduct/LatestProduct'
+import TwoColBanner from './TwoColBanner/TwoColBanner'
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
         <CategorySection />
         <TwoColBanner />
         <JustArrivedSection />
+        <LatestProduct />
       </div>
 
     </>
