@@ -4,6 +4,7 @@ import SecondHeader from '../Header/SecondHeader'
 import TopHeader from '../Header/TopHeader'
 import CategorySection from './CategorySection/CategorySection'
 import HeroSection from './HeroSection/HeroSection'
+import JustArrivedSection from './JustArrivedSection/JustArrivedSection'
 import TwoColBanner from './TwoColBanner.js/TwoColBanner'
 
 function HomePage() {
@@ -17,6 +18,7 @@ function HomePage() {
         <HeroSection />
         <CategorySection />
         <TwoColBanner />
+        <JustArrivedSection />
       </div>
 
     </>
