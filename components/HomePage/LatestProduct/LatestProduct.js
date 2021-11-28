@@ -10,7 +10,7 @@ function LatestProduct() {
       <Title title="Latest Fruits" />
 
       {/* Latest product */}
-      <div className="grid grid-cols-5 gap-3 items-start mb-20">
+      <div className="grid grid-cols-5 gap-3 items-start mb-10">
 
         {/* item */}
         <div className="border border-gray-100 rounded-sm shadow-md">
