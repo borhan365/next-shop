@@ -11,7 +11,7 @@ const FeaturedData = [
   },
   {
     name: "Nature's Way, Alive!, Men's Energy Multivitamin-",
-    img: "/images/vegetables/pui-spinach-1-bundle.webp",
+    img: "/images/vegetables/sweet-pumpkin-1-pcs.webp",
     price: "30"
   },
   {

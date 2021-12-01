@@ -3,7 +3,7 @@ import React from 'react'
 import SidebarMenu from '../../Data/SidebarMenu'
 import HeroSlider from './HeroSlider'
 
-function HeroSection() {
+function HeroSection({product}) {
   return (
     <>
       <div className="flex justify-between gap-5 my-2 w-full overflow-hidden">

@@ -16,7 +16,7 @@ function SearchForm() {
           <input className="border-r-2 w-96 text-gray-600 font-medium text-sm h-10 p-1 focus:border-transparent focus:outline-none" type="text" placeholder="What Are You Looking For..." name="search" />
 
           <Link href="/" class="">
-            <div className="flex justify-start gap-2 items-center pl-2 text-gray-600 font-medium text-sm">
+            <div className="flex cursor-pointer hover:text-green-600 justify-start gap-2 items-center pl-2 text-gray-600 font-medium text-sm">
               <i class=""><FiSearch /></i> Search
             </div>
           </Link>
