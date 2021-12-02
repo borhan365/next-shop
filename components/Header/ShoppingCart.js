@@ -1,40 +1,15 @@
-import React from "react";
-import { FiShoppingCart } from "react-icons/fi";
-import Image from 'next/image'
-import Link from 'next/link'
-import {FaRegHeart} from 'react-icons/fa'
-
+/* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 import CartData from '../Data/CartData'
 
-function CartComp() {
-  const [open, setOpen] = useState(false)
+
+export default function ShoppingCart() {
+  const [open, setOpen] = useState(true)
+
   return (
-    <>
-      {/* login/register */}
-      <div className="mr-1 text-sm font-medium uppercase">
-        <span>
-          <Link href="/login"> 
-              <a className="hover:text-green-600 mr-1">Login</a> 
-          </Link> /
-          <Link href="/register"> 
-            <a className="hover:text-green-600 ml-1">Register</a> 
-          </Link>
-        </span>
-      </div>
-
-      {/* heart */}
-      <div className="text-gray-600 font-medium text-xl">
-        <FaRegHeart />
-      </div>
-      <div onClick={() => setOpen(true)} className="p-2 px-4 border rounded flex justify-start gap-2 items-center text-gray-600 font-medium cursor-pointer hover:text-green-600 hover:border-green-500">
-        <FiShoppingCart />
-        Cart <span className="font-bold">0</span>
-      </div>
-
-      <Transition.Root show={open} as={Fragment}>
+    <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="fixed inset-0 overflow-hidden z-50" onClose={setOpen}>
         <div className="absolute inset-0 overflow-hidden">
           <Transition.Child
@@ -103,7 +78,7 @@ function CartComp() {
                                   <p className="text-gray-500">Qty {product.quantity}</p>
 
                                   <div className="flex">
-                                    <button type="button" className="font-medium text-green-600 hover:text-green-500">
+                                    <button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
                                       Remove
                                     </button>
                                   </div>
@@ -125,7 +100,7 @@ function CartComp() {
                     <div className="mt-6">
                       <a
                         href="#"
-                        className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700"
+                        className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                       >
                         Checkout
                       </a>
@@ -135,7 +110,7 @@ function CartComp() {
                         or{' '}
                         <button
                           type="button"
-                          className="text-green-600 font-medium hover:text-green-500"
+                          className="text-indigo-600 font-medium hover:text-indigo-500"
                           onClick={() => setOpen(false)}
                         >
                           Continue Shopping<span aria-hidden="true"> &rarr;</span>
@@ -150,22 +125,5 @@ function CartComp() {
         </div>
       </Dialog>
     </Transition.Root>
-
-      {/* avatar */}
-      <div>
-        <Link href="/profile">
-          <a>
-            <Image
-              className="rounded-full object-cover"
-              width={50}
-              height={50}
-              src="/images/others/happy-girl.jpg"
-            />
-          </a>
-        </Link>
-      </div>
-    </>
-  );
+  )
 }
-
-export default CartComp;

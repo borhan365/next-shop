@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function JustArrivedSection() {
   return (
@@ -15,22 +16,38 @@ function JustArrivedSection() {
 
           {/* item */}
           <div className="w-full">
-              <Image width={500} height={500} className="object-contain" src="/images/fruits/banner1.png" />
+              <Link href="/single">
+                  <a>
+                    <Image width={500} height={500} className="object-contain" src="/images/fruits/banner1.png" />
+                  </a>
+              </Link>
           </div>
 
           {/* item */}
           <div className="w-full">
-              <Image width={500} height={500} className="object-contain" src="/images/fruits/banner2.png" />
+              <Link href="/single">
+                  <a>
+                    <Image width={500} height={500} className="object-contain" src="/images/fruits/banner2.png" />
+                  </a>
+              </Link>
           </div>
 
           {/* item */}
           <div className="w-full">
-              <Image width={500} height={500} className="object-contain" src="/images/fruits/banner3.png" />
+              <Link href="/single">
+                  <a>
+                    <Image width={500} height={500} className="object-contain" src="/images/fruits/banner3.png" />
+                  </a>
+              </Link>
           </div>
 
           {/* item */}
           <div className="w-full">
-              <Image width={500} height={500} className="object-contain" src="/images/fruits/banner5.png" />
+              <Link href="/single">
+                  <a>
+                    <Image width={500} height={500} className="object-contain" src="/images/fruits/banner5.png" />
+                  </a>
+              </Link>
           </div>
       </div>
     </>

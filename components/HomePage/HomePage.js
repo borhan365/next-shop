@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../Header/Header'
 import MenuHeader from '../Header/MenuHeader'
 import SecondHeader from '../Header/SecondHeader'
 import TopHeader from '../Header/TopHeader'
@@ -17,9 +18,7 @@ import Vegetable from './Vegetable/Vegetable'
 function HomePage({product}) {
   return (
     <>
-      <TopHeader />
-      <SecondHeader />
-      <MenuHeader />
+      <Header />
 
       <div className="container">
         <HeroSection product={product} />
