@@ -18,8 +18,11 @@ import Vegetable from './Vegetable/Vegetable'
 function HomePage({product}) {
   return (
     <>
+      <div className="container-mobile-fluid"> 
+          <HeroSection product={product} />
+      </div>
+
       <div className="container">
-        <HeroSection product={product} />
         <CategorySection />
         <TwoColBanner />
         <Vegetable />
