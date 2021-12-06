@@ -8,7 +8,7 @@ const bg2 = "/images/fruits/bg2.jpg";
 function ThreeColBanner() {
   return (
     <>
-      <div className="grid grid-cols-3 gap-3 my-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-4">
         {/* item */}
         {ThreeColBannerData.map((item, index) => (
           <div

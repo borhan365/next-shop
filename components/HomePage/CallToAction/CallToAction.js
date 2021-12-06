@@ -4,7 +4,7 @@ import Image from 'next/image'
 function CallToAction() {
   return (
     <>
-      <div className="border border-gray-200 p-3 flex justify-between items-center gap-3 my-4 mb-7">
+      <div className="border border-gray-200 p-3 flex justify-between items-center flex-col sm:flex-row gap-3 my-4 mb-7">
 
           {/* item */}
           <div className="flex justify-start items-center gap-2 w-full">

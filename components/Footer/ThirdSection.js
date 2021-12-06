@@ -4,7 +4,7 @@ import Link from 'next/link'
 function ThirdSection() {
   return (
     <>
-      <div className="flex justify-between gap-2 items-center py-3">
+      <div className="flex justify-between flex-col sm:flex-row gap-2 items-center py-3">
           <p>@ Copyright all right reserved in 2021</p>
           <ul className="flex justify-start items-center gap-3">
             <li>

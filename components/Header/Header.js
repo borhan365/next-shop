@@ -7,11 +7,12 @@ import ShoppingCart from './ShoppingCart'
 function Header() {
   return (
     <>
-     <TopHeader />
-     <SecondHeader />
-     <MenuHeader /> 
-     {/* <ShoppingCart /> */}
-    </>
+     <div className="hidden sm:block">
+       <TopHeader />
+        <SecondHeader />
+        <MenuHeader /> 
+     </div>
+    </> 
   )
 }
 

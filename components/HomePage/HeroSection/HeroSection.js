@@ -6,10 +6,10 @@ import HeroSlider from './HeroSlider'
 function HeroSection({product}) {
   return (
     <>
-      <div className="flex justify-between gap-5 my-2 w-full overflow-hidden">
+      <div className="flex justify-between gap-5 my-0 sm:my-2 w-full overflow-hidden">
 
           {/* sidebar menu */}
-          <div className="w-1/5 bg-gray-100 border p-3">
+          <div className="hidden sm:block w-1/5 bg-gray-100 border p-3">
             <ul>
               {
                 SidebarMenu.map((item, index) => (
@@ -24,7 +24,7 @@ function HeroSection({product}) {
           </div>
 
           {/* hero slider */}
-          <div className="w-4/5">
+          <div className="w-full sm:w-4/5">
             <HeroSlider />
           </div>
       </div>

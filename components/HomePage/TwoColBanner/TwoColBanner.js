@@ -7,7 +7,7 @@ const bg2 = "/images/fruits/bg2.jpg";
 function TwoColBanner() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-3 my-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
 
           {/* item */}
           <div className="p-5 rounded-md w-full bg-center bg-no-repeat bg-cover h-auto flex justify-between gap-3 items-center shadow-md" style={{backgroundImage: `url(${bg1})`}}>
@@ -15,7 +15,7 @@ function TwoColBanner() {
                 <Image src="/images/fruits/banner3.png" width={500} height={500} className="object-contain" />
             </div>
             <div className="w-full">
-              <h2 className="text-4xl font-bold line text-gray-900">Strawberry Jam 100% Natural Fruit Juice <span className="text-green-900">Sale Off 50%</span></h2>
+              <h2 className="text-2xl sm:text-4xl font-bold line text-gray-900">Strawberry Jam 100% Natural Fruit Juice <span className="text-green-900">Sale Off 50%</span></h2>
             </div>
           </div>
 
@@ -25,7 +25,7 @@ function TwoColBanner() {
               <Image src="/images/fruits/banner1.png" width={500} height={500} className="object-contain" />
           </div>
           <div className="w-full">
-            <h2 className="text-4xl font-bold line text-gray-900">Strawberry Jam 100% Natural Fruit Juice <span className="text-green-900">Sale Off 50%</span></h2>
+            <h2 className="text-2xl sm:text-4xl font-bold line text-gray-900">Strawberry Jam 100% Natural Fruit Juice <span className="text-green-900">Sale Off 50%</span></h2>
           </div>
         </div>
 

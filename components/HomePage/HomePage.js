@@ -18,8 +18,6 @@ import Vegetable from './Vegetable/Vegetable'
 function HomePage({product}) {
   return (
     <>
-      <Header />
-
       <div className="container">
         <HeroSection product={product} />
         <CategorySection />

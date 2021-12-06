@@ -9,17 +9,17 @@ import FeaturedItems from './FeaturedItems'
 function FeaturedSection() {
   return (
     <>
-      <div className="flex justify-between gap-4 mb-10">
+      <div className="flex justify-between flex-col sm:flex-row gap-4 mb-10">
 
           {/* list of items and down banner ads */}
-          <div className="w-3/4">
+          <div className="w-full sm:w-3/4">
               <Title title="Featured Vegetables" />
               <FeaturedItems />
               <FeaturedBanner />
           </div>
 
           {/* featured item */}
-          <div className="w-1/4">
+          <div className="w-full sm:w-1/4">
             <BigFeaturedItem />
           </div>
           
