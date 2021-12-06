@@ -14,6 +14,7 @@ import LatestProduct from './LatestProduct/LatestProduct'
 import ThreeColBanner from './ThreeColBanner/ThreeColBanner'
 import TwoColBanner from './TwoColBanner/TwoColBanner'
 import Vegetable from './Vegetable/Vegetable'
+import ShopByCategory from './ShopByCategory/ShopByCategory'
 
 function HomePage({product}) {
   return (
@@ -24,6 +25,7 @@ function HomePage({product}) {
 
       <div className="container">
         <CategorySection />
+        <ShopByCategory />
         <TwoColBanner />
         <Vegetable />
         <JustArrivedSection />

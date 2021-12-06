@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
+import Link from 'next/link'
 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
@@ -244,12 +245,14 @@ export default function Example() {
                     </RadioGroup>
                   </div>
 
+                  <Link href="/cart">
                   <button
                     type="submit"
                     className="mt-3 sm:mt-10 w-full bg-green-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                   >
                     Buy Now
                   </button>
+                  </Link>
                 </form>
               </div>
             </div>
