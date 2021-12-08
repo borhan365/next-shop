@@ -1,19 +1,20 @@
 import React from 'react'
 import CartData from '../Data/CartData'
 import Title from '../HomePage/Title'
+import Link from 'next/link'
 
 
 function CartPage() {
   return (
     <>
-      <div className="mt-10 mb-10">
+      <div className="mt-10 mb-2">
       <Title title="Order summery"/>
       </div>
-      <div className="flex justify-between gap-20 items-start pb-20">
+      <div className="flex justify-between gap-10 items-start pb-20">
 
           {/* cart product overviews */}
           <div className="w-4/6">
-            <ul role="list" className="-my-6 divide-y divide-gray-200">
+            <ul role="list" className=" divide-y divide-gray-200 border p-5">
               {CartData.map((product) => (
                 <li key={product.id} className="py-6 flex">
                   <div className="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
@@ -28,7 +29,9 @@ function CartPage() {
                     <div>
                       <div className="flex justify-between text-base font-medium text-gray-900">
                         <h3>
-                          <a href={product.href}>{product.name}</a>
+                          <Link href={product.href}>
+                            <a>{product.name}</a>
+                          </Link>
                         </h3>
                         <p className="ml-4">{product.price}</p>
                       </div>
@@ -49,7 +52,7 @@ function CartPage() {
             </ul>
           </div>
 
-          <div className="w-2/6 py-6 px-4 sm:px-6 bg-green-100 rounded-md">
+          <div className="w-2/6 py-6 px-4 sm:px-6 bg-green-50 shadow-md sticky top-4">
                 <h2 className="text-xl font-semibold mb-7">Total Summery</h2>
               <div className="flex justify-between text-base font-medium text-gray-900 border-b py-3 border-gray-300">
                 <p className="text-gray-500">Subtotal</p>
@@ -69,12 +72,13 @@ function CartPage() {
               </div>
               <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
               <div className="mt-6">
+                <Link href="/cart">
                 <a
-                  href="/cart"
                   className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700"
                 >
                   Checkout
                 </a>
+                </Link>
               </div>
               <div className="mt-6 flex justify-center text-sm text-center text-gray-500">
                 <p>

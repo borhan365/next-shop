@@ -2,7 +2,7 @@ const CartData = [
   {
     id: 1,
     name: 'Throwback Hip Bag',
-    href: '#',
+    href: '/single',
     color: 'Salmon',
     price: '$90.00',
     quantity: 1,
@@ -12,7 +12,7 @@ const CartData = [
   {
     id: 2,
     name: 'Medium Stuff Satchel',
-    href: '#',
+    href: '/single',
     color: 'Blue',
     price: '$32.00',
     quantity: 1,
@@ -23,7 +23,7 @@ const CartData = [
   {
     id: 3,
     name: 'Throwback Hip Bag',
-    href: '#',
+    href: '/single',
     color: 'Salmon',
     price: '$90.00',
     quantity: 1,
@@ -33,7 +33,7 @@ const CartData = [
   {
     id: 4,
     name: 'Medium Stuff Satchel',
-    href: '#',
+    href: '/single',
     color: 'Blue',
     price: '$32.00',
     quantity: 1,
